@@ -16,7 +16,7 @@ from risk_engine import load_contracts, calculate_risk
 
 st.set_page_config(
     page_title="Vendor Risk Monitor",
-    page_icon="⚠️",
+    page_icon="",
     layout="wide"          # uses full browser width instead of narrow centered column
 )
 
