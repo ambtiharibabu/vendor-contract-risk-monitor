@@ -1,6 +1,6 @@
 # ⚠️ Vendor Contract Renewal Risk Monitor
 
-🔗 **Live App:** https://hari-vendor-contract-risk-monitor.streamlit.app
+🔗 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hari-vendor-contract-risk-monitor.streamlit.app)
 
 A Streamlit dashboard that tracks vendor and supplier contracts
 
