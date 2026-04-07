@@ -11,10 +11,11 @@ scores vendor risk across multiple operational signals, and exports Excel renewa
 ---
 
 ## Dashboard Preview
+![Contract Expiry Timeline and Risk Table](assets/table_preview.png)
 
 ![Vendor Risk Monitor — KPIs and Risk Analytics](assets/dashboard_preview.png)
 
-![Contract Expiry Timeline and Risk Table](assets/table_preview.png)
+
 
 ---
 
