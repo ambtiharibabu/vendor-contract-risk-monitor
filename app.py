@@ -29,15 +29,16 @@ st.set_page_config(
 @st.cache_data
 def get_data():
     import os
-    import subprocess
-    # Streamlit Cloud has no .db file — generate it on first load automatically
+    # On Streamlit Cloud the .db file doesn't exist — generate it on first load
     if not os.path.exists("vendor_contracts.db"):
-        subprocess.run(["python", "generate_data.py"], check=True)
+        import generate_data  # importing this module runs all its top-level code,
+                              # which creates and populates vendor_contracts.db
     df = load_contracts()
     df = calculate_risk(df)
     return df
 
 df = get_data()
+
 # ------------------------------------------------------------------
 # HEADER
 # ------------------------------------------------------------------
