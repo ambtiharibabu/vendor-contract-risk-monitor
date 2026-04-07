@@ -28,12 +28,7 @@ st.set_page_config(
 # reuse the result unless the underlying data changes" — keeps the app fast
 @st.cache_data
 def get_data():
-    import os
-    # Streamlit Cloud has no .db file — call the generation function directly
-    if not os.path.exists("vendor_contracts.db"):
-        from generate_data import generate_and_save
-        generate_and_save()
-    df = load_contracts()
+    df = load_contracts()   # load_contracts now handles missing .db itself
     df = calculate_risk(df)
     return df
 

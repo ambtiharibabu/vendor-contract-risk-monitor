@@ -13,12 +13,22 @@ from datetime import datetime
 # ------------------------------------------------------------------
 
 def load_contracts(db_path="vendor_contracts.db"):
-    """Pull the vendor_contracts table from SQLite into a DataFrame."""
+    """
+    Load vendor contracts. On Streamlit Cloud, the .db file may not exist,
+    so we fall back to generating data in-memory directly from generate_data.
+    """
+    import os
+    import sqlite3
+
+    # If .db doesn't exist, generate data in-memory without writing to disk
+    if not os.path.exists(db_path):
+        from generate_data import generate_and_save
+        generate_and_save(db_path)  # creates the .db file fresh
+
     conn = sqlite3.connect(db_path)
     df = pd.read_sql("SELECT * FROM vendor_contracts", conn)
     conn.close()
     return df
-
 
 # ------------------------------------------------------------------
 # RISK CALCULATIONS
