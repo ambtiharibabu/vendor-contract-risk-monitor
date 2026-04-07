@@ -1,5 +1,9 @@
 # ⚠️ Vendor Contract Renewal Risk Monitor
 
+🔗 **Live App:** https://hari-vendor-contract-risk-monitor.streamlit.app
+
+A Streamlit dashboard that tracks vendor and supplier contracts
+
 A Streamlit dashboard that tracks vendor and supplier contracts, flags renewal risk windows,
 scores vendor risk across multiple operational signals, and exports Excel renewal action reports
 — built to demonstrate compliance operations and supply chain analytics skills.

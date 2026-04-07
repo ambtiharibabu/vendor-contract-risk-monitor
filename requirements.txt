@@ -1,0 +1,5 @@
+pandas
+faker
+streamlit
+plotly
+openpyxl
