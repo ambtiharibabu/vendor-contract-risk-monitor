@@ -1,5 +1,13 @@
 # ⚠️ Vendor Contract Renewal Risk Monitor
 
+## Business Context
+
+Designed for commodity trading and supply chain ops workflows where contract expiry, 
+SLA compliance, and counterparty risk must be monitored continuously across large 
+agreement portfolios. Simulates the contract documentation and risk flagging workflow 
+typical of energy, agriculture, and industrial trading operations.
+
+
 ## Live-App🔗 : [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hari-vendor-contract-risk-monitor.streamlit.app)
 
 ## Description:
